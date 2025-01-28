@@ -10,7 +10,7 @@ const projects = [
       <li>• Analyzed the privacy-performance trade-offs in LLMs by systematically varying privacy budgets (ϵ = 0.1 to 8) and benchmarking model performance across diverse architectures and datasets.
       </li>
      </ul></>),
-    details: "This project involved training deep learning models like VGG16, ormalization and data augmentation."
+    details: "Developed and experimented with Differentially-Private Offsite Prompt Tuning (DP-OPT) to optimize privacy-preserving prompts for large language models, ensuring competitive performance while maintaining robust privacy guarantees. The approach was tested across multiple LLMs, demonstrating effective privacy-performance trade-offs."
   },
   {
     id:"mri-classification",
@@ -23,7 +23,7 @@ const projects = [
       </li>
     </ul>
     </>),
-    details: "This project involved training deep learning models like VGG16, ormalization and data augmentation."
+    details: "This project focuses on the classification of MRI images using various deep learning models. The implementation includes preprocessing steps, removal of duplicate images, and training of different neural network architectures."
   },
   {
     id:"fall-alert",
@@ -34,7 +34,7 @@ const projects = [
       <li>• Implemented on-device machine learning inference to reduce false positives by 35% and trigger emergency responses within 3 seconds, ensuring accuracy and reliability in diverse scenarios.</li>
     </ul>
     </>),
-    details: "This project involved training deep learning models like VGG16, ormalization and data augmentation."
+    details: "FallAlert is a mobile application that provides real-time fall detection and emergency assistance for elderly individuals and workers in hazardous environments."
   },
   {
     id:"mentalhealth",
@@ -47,7 +47,7 @@ const projects = [
       </li>
     </ul>
     </>),
-    details: "This project involved training deep learning models like VGG16, ormalization and data augmentation."
+    details: "Developed deep learning models (LSTM, GRU, and DistilBERT) to analyze Twitter data for early detection of depression, leveraging linguistic patterns and temporal dependencies to explore the potential of social media in mental health diagnostics."
   },
   {
     id:"housepricing",
@@ -58,7 +58,18 @@ const projects = [
       <li>• Conducted comprehensive hyperparameter tuning and utilized cross-validation techniques to enhance model accuracy and robustness.</li>
     </ul>
     </>),
-    details: "This project involved training deep learning models like VGG16, ormalization and data augmentation."
+    details: "Developed a project on house price prediction using advanced regression techniques like Gradient Boosting and Random Forest, exploring factors influencing property values to enhance understanding in real estate analytics."
+  },
+  {
+    id:"xai",
+    title: "Optimizing Deep Learning with Explainable AI",
+    description: (<>
+    <ul>
+      <li>• Applied machine learning models including KNN, Random Forest, SVR, and Gradient Boosting Regression to predict housing prices, achieving a MSE of 0.0017 and R-squared of 0.67 with Gradient Boosting Regression.</li>
+      <li>• Conducted comprehensive hyperparameter tuning and utilized cross-validation techniques to enhance model accuracy and robustness.</li>
+    </ul>
+    </>),
+    details: "Developed a project on house price prediction using advanced regression techniques like Gradient Boosting and Random Forest, exploring factors influencing property values to enhance understanding in real estate analytics."
   },
   // Add more projects here
 ];
