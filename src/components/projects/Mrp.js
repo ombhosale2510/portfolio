@@ -1,5 +1,4 @@
 import React from "react";
-// import modelRuntimes from '../../../public/images/modelRuntimes.png';
 
 const MRP = () => (
   <div className="p-8 bg-gray-100 min-h-screen">
@@ -53,12 +52,16 @@ const MRP = () => (
       <div className="flex gap-4">
         <a
           href="https://github.com/ombhosale2510/dpopt-mrp-project/blob/87d527a0bef7361c944ce651b8334dc704da0e71/ENGG6990%20-%20MRP%20Report.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="bg-blue-600 text-white px-4 py-2 rounded shadow-md hover:bg-blue-700"
         >
           View Full Report
         </a>
         <a
-          href="https://github.com/ombhosale2510/dpopt-mrp-project"
+          href="https://github.com/ombhosale2510/dpopt-mrp-project" 
+          target="_blank"
+          rel="noreferrer"
           className="bg-blue-600 text-white px-4 py-2 rounded shadow-md hover:bg-blue-700"
         >
           View Code Repository
