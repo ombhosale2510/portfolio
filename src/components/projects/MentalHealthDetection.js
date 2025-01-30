@@ -1,41 +1,41 @@
 import React from "react";
 
-const HousingPrices = () => (
+const MentalHealthDetection = () => (
   <div className="p-8 bg-gray-100 min-h-screen">
     <header className="text-center mb-12">
       <h1 className="text-4xl font-bold text-blue-600 mb-2">
-        Predictive Modeling of Housing Prices
+        Early Detection of Depression Using Twitter Data
       </h1>
-      <p className="text-xl text-gray-600">Machine Learning Research Project | Lead Data Scientist</p>
+      <p className="text-xl text-gray-600">Deep Learning Research Project | NLP Engineer & Model Architect</p>
     </header>
 
     <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Project Overview</h2>
       <p className="text-gray-700 mb-6">
-        Developed a comparative analysis framework for 7 regression models using 2,919 property listings
-        with 81 features. Achieved 79% prediction accuracy through advanced feature engineering and
-        hyperparameter optimization.
+        Developed a sequential deep learning system analyzing 1.8M+ tweets from 800+ users to predict depression 
+        with 79% accuracy. Leveraged temporal tweet patterns and advanced NLP techniques to enable early 
+        mental health intervention.
       </p>
       
       <div className="grid md:grid-cols-2 gap-6">
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Achievements</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>0.001673 MSE with Gradient Boosting (Best Model)</li>
-            <li>56% feature reduction via Mutual Information Gain</li>
-            <li>79% R² score for price prediction accuracy</li>
-            <li>500+ hyperparameter combinations tested</li>
+            <li>79% accuracy with LSTM model (400 users, 300 sequences)</li>
+            <li>40% reduction in false positives through Kalman filtering</li>
+            <li>Processed 500k+ tweets with custom NLP pipeline</li>
+            <li>Comparative analysis of 3 DL architectures</li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Technical Stack</h3>
           <div className="flex flex-wrap gap-2">
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Python</span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Scikit-learn</span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">GridSearchCV</span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Pandas</span>
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Matplotlib</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">TensorFlow</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Word2Vec</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">LSTM/GRU</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">DistilBERT</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">NVIDIA V100</span>
           </div>
         </div>
       </div>
@@ -48,10 +48,10 @@ const HousingPrices = () => (
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Core Innovations</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Custom one-hot encoding pipeline for 2,262 features</li>
-            <li>Mutual Information Gain feature selection (0.01 threshold)</li>
-            <li>Nested cross-validation strategy (5-fold inner, 10-fold outer)</li>
-            <li>Ensemble gradient boosting with 300 estimators</li>
+            <li>Chronological tweet sequence analysis (4-year windows)</li>
+            <li>Custom text preprocessing pipeline with lemmatization</li>
+            <li>Dual LSTM layers with 128 neurons each</li>
+            <li>User-level temporal pattern recognition</li>
           </ul>
         </div>
 
@@ -59,12 +59,12 @@ const HousingPrices = () => (
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Performance Metrics</h3>
           <div className="space-y-2">
             <div className="flex justify-between">
-              <span>Best Model MSE:</span>
-              <span className="font-semibold">0.00167</span>
+              <span>Best Model Accuracy:</span>
+              <span className="font-semibold">79%</span>
             </div>
             <div className="flex justify-between">
-              <span>Feature Reduction:</span>
-              <span className="font-semibold">56/2262</span>
+              <span>Sequence Length:</span>
+              <span className="font-semibold">300 tweets</span>
             </div>
             <div className="flex justify-between">
               <span>Training Efficiency:</span>
@@ -76,25 +76,24 @@ const HousingPrices = () => (
     </section>
 
     <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Model Comparison</h2>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Project Impact</h2>
       <div className="grid md:grid-cols-2 gap-6">
         <div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Algorithm Scores</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Contributions</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Gradient Boosting: 0.00167 MSE</li>
-            <li>Random Forest: 0.00279 MSE</li>
-            <li>Lasso Regression: 0.00510 MSE</li>
-            <li>KNN (k=9): 0.00338 MSE</li>
+            <li>Designed temporal analysis framework for tweet histories</li>
+            <li>Implemented custom Word2Vec embeddings</li>
+            <li>Developed comparative analysis framework for DL models</li>
+            <li>Optimized LSTM for long-sequence processing</li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Insights</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3">Future Directions</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Tree-based models outperformed linear approaches</li>
-            <li>YearBuilt emerged as top predictive feature</li>
-            <li>Hyperparameter tuning improved accuracy by 22%</li>
-            <li>Feature selection reduced training time by 65%</li>
+            <li>Multimodal analysis with profile metadata</li>
+            <li>Federated learning for privacy preservation</li>
+            <li>Real-time monitoring API development</li>
           </ul>
         </div>
       </div>
@@ -106,18 +105,18 @@ const HousingPrices = () => (
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Data Challenges</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>High dimensionality → Mutual Information filtering</li>
-            <li>Categorical features → Custom one-hot encoding</li>
-            <li>Data leakage prevention → Nested CV pipeline</li>
+            <li>Noise in self-reported diagnoses → Anchor tweet validation</li>
+            <li>Multilingual content → Langdetect filtering</li>
+            <li>Class imbalance → Stratified sampling</li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Model Challenges</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Overfitting in RF → Pruning (max_depth=70)</li>
-            <li>Computation limits → Parallel processing</li>
-            <li>Non-linear relationships → Kernel SVR</li>
+            <li>Vanishing gradients → LSTM gate mechanisms</li>
+            <li>Overfitting → Early stopping & dropout</li>
+            <li>Compute limits → Gradient accumulation</li>
           </ul>
         </div>
       </div>
@@ -154,4 +153,4 @@ const HousingPrices = () => (
   </div>
 );
 
-export default HousingPrices;
+export default MentalHealthDetection;

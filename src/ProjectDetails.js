@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import MRIClassification from "./components/projects/MRIClassification";
 import FallAlert from "./components/projects/FallAlert";
 import MRP from "./components/projects/Mrp";
-import MentalHealth from "./components/MentalHealth";
+import MentalHealth from "./components/projects/MentalHealthDetection";
 import HousingPrices from "./components/projects/HousingPrices";
 
 const ProjectDetails = () => {
