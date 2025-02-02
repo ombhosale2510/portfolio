@@ -5,6 +5,7 @@ import FallAlert from "./components/projects/FallAlert";
 import MRP from "./components/projects/Mrp";
 import MentalHealth from "./components/projects/MentalHealthDetection";
 import HousingPrices from "./components/projects/HousingPrices";
+import ExplainableAI from "./components/projects/ExplainableAI";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -21,6 +22,8 @@ const ProjectDetails = () => {
         return <MentalHealth />;
       case "housepricing":
         return <HousingPrices />
+      case "xai":
+        return <ExplainableAI />
       default:
         return (
           <div className="text-center">
