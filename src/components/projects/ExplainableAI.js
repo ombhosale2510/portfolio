@@ -1,6 +1,18 @@
 import React from "react";
+import Modal from "react-modal";
+import { useImageModal } from './utils/useImageModal';
+import ImageModal from './utils/ImageModal';
+import ImageGallery from './utils/ImageGallery';
 
-const ExplainableAI = () => (
+const image1 = `${process.env.PUBLIC_URL}/images/XAI/goals_xai.png`
+Modal.setAppElement('#root');
+
+const ExplainableAI = () => {
+  const { selectedImage, isModalOpen, handleImageClick, closeModal } = useImageModal();
+  const mainImages = [image1];
+  const projectVisuals = [];
+
+  return (
   <div className="p-8 bg-gray-100 min-h-screen">
     <header className="text-center mb-12">
       <h1 className="text-4xl font-bold text-blue-600 mb-2">
@@ -8,6 +20,18 @@ const ExplainableAI = () => (
       </h1>
       <p className="text-xl text-gray-600">Research Project | Optimization Techniques Course</p>
     </header>
+    
+
+    {/* Main Images Section */}
+    <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6">Key Visualizations</h2>
+        <ImageGallery 
+          images={mainImages} 
+          handleClick={handleImageClick}
+          columns={2}
+          imageHeight="h-64"
+        />
+      </section>
 
     <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Project Overview</h2>
@@ -113,7 +137,23 @@ const ExplainableAI = () => (
         </div>
       </div>
     </section>
+
+    <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Project Visuals</h3>
+        <ImageGallery
+          images={projectVisuals}
+          handleClick={handleImageClick}
+          columns={4}
+          imageHeight="h-32"
+        />
+    </section>
+
+    <ImageModal 
+        isOpen={isModalOpen} 
+        closeModal={closeModal} 
+        selectedImage={selectedImage} 
+      />
   </div>
-);
+)};
 
 export default ExplainableAI;

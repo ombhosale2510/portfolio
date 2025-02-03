@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.react-modal-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.react-modal-image:hover {
+  transform: scale(1.05);
+}
