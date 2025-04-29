@@ -1,6 +1,18 @@
 import React from "react";
+import { useImageModal } from './utils/useImageModal';
+import ImageModal from './utils/ImageModal';
 
-const MRP = () => (
+// image paths
+const projectImages = [
+  `${process.env.PUBLIC_URL}/images/MRP/model_runtimes.png`,
+  `${process.env.PUBLIC_URL}/images/MRP/privacy_analysis.png`,
+  `${process.env.PUBLIC_URL}/images/MRP/system_architecture.png`,
+];
+
+const MRP = () => {
+  const { selectedImage, isModalOpen, handleImageClick, closeModal } = useImageModal();
+
+  return (
   <div className="p-8 bg-gray-100 min-h-screen">
     <header className="text-center mb-12">
       <h1 className="text-4xl font-bold text-blue-600 mb-2">
@@ -100,6 +112,25 @@ const MRP = () => (
       </div>
     </section>
 
+    <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Project Visualizations</h2>
+      <div className="flex flex-nowrap gap-4 overflow-x-auto pb-4">
+        {projectImages.map((img, index) => (
+          <div 
+            key={index}
+            className="flex-shrink-0 w-[calc(33%-0.5rem)] min-w-[300px] relative"
+            onClick={() => handleImageClick(img)}
+          >
+            <img
+              src={img}
+              alt={`Visualization ${index + 1}`}
+              className="h-64 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+
     <section className="mb-12">
       <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Project Resources</h2>
       <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -128,7 +159,13 @@ const MRP = () => (
         </a>
       </div>
     </section>
+
+    <ImageModal 
+      isOpen={isModalOpen} 
+      closeModal={closeModal} 
+      selectedImage={selectedImage} 
+    />
   </div>
-);
+)};
 
 export default MRP;

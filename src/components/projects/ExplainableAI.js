@@ -23,25 +23,6 @@ const ExplainableAI = () => {
       </h1>
       <p className="text-xl text-gray-600">Research Synthesis | Neural Network Optimization</p>
     </header>
-    {/* Image Gallery Section */}
-    <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Key Visualizations</h2>
-      <div className="flex flex-nowrap gap-4 overflow-x-auto pb-4">
-        {mainImages.map((img, index) => (
-          <div 
-            key={index}
-            className="flex-shrink-0 w-[calc(50%-0.5rem)] min-w-[45%] relative"
-            onClick={() => handleImageClick(img)}
-          >
-            <img
-              src={img}
-              alt={`Visualization ${index + 1}`}
-              className="h-64 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-            />
-          </div>
-        ))}
-      </div>
-    </section>
 
     <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Research Overview</h2>
@@ -145,6 +126,34 @@ const ExplainableAI = () => {
           </div>
         </div>
       </div>
+    </section>
+
+    <section className="mb-12 bg-white p-6 rounded-lg shadow-md">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Project Visualizations</h2>
+      <div className="flex flex-nowrap gap-4 overflow-x-auto pb-4">
+        {mainImages.map((img, index) => (
+          <div 
+            key={index}
+            className="flex-shrink-0 w-[calc(33%-0.5rem)] min-w-[300px] relative"
+            onClick={() => handleImageClick(img)}
+          >
+            <img
+              src={img}
+              alt={`Visualization ${index + 1}`}
+              className="h-64 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section className="mb-12">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Project Resources</h2>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><a href="https://example.com/resource1" className="text-blue-600 hover:underline">Resource 1</a></li>
+        <li><a href="https://example.com/resource2" className="text-blue-600 hover:underline">Resource 2</a></li>
+        <li><a href="https://example.com/resource3" className="text-blue-600 hover:underline">Resource 3</a></li>
+      </ul>
     </section>
 
     <ImageModal 
