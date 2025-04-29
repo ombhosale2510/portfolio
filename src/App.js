@@ -17,7 +17,7 @@ const Loading = () => (
 const App = () => (
   <Router basename="/portfolio">
     <ErrorBoundary>
-      <div className="flex flex-col min-h-screen font-sans">
+      <div className="flex flex-col  font-sans">
         <header className="text-center py-8 bg-[#1F1B24] shadow-lg">
           <motion.h1
             className="text-4xl font-bold text-[#BB86FC]"
@@ -47,7 +47,7 @@ const App = () => (
               <Route
                 path="/"
                 element={
-                  <section className="bg-[#121212] min-h-screen">
+                  <section className="bg-[#121212] ">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                       {projects.map((project) => (
                         <motion.div

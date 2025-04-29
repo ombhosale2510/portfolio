@@ -13,7 +13,7 @@ const HousingPrices = () => {
   const { selectedImage, isModalOpen, handleImageClick, closeModal } = useImageModal();
 
   return (
-  <div className="p-8 bg-gray-100 min-h-screen">
+  <div className="p-8 bg-gray-100 ">
     <header className="text-center mb-12">
       <h1 className="text-4xl font-bold text-blue-600 mb-2">
         Predictive Modeling of Housing Prices

@@ -25,7 +25,7 @@ const ProjectComponent = () => {
   const { selectedImage, isModalOpen, handleImageClick, closeModal } = useImageModal();
 
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
+    <div className="p-8 bg-gray-100 ">
       {/* 1. Header Section */}
       <header className="text-center mb-12">...</header>
 
