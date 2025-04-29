@@ -126,7 +126,7 @@ const MentalHealthDetection = () => (
       <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Project Resources</h2>
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a
-          href="#github-link"
+          href="https://github.com/ombhosale2510/Early-Detection-of-Mental-Health-Disorders-using-Twitter-STMHD-"
           target="_blank"
           rel="noreferrer"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors flex items-center justify-center"
@@ -138,7 +138,7 @@ const MentalHealthDetection = () => (
         </a>
         
         <a
-          href="#research-paper"
+          href="https://github.com/ombhosale2510/Early-Detection-of-Mental-Health-Disorders-using-Twitter-STMHD-/blob/main/Deep_Learning_W24.pdf"
           target="_blank"
           rel="noreferrer"
           className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition-colors flex items-center justify-center"

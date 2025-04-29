@@ -6,6 +6,7 @@ const ImageGallery = ({ images, handleClick, columns = 2, imageHeight = 'h-64' }
     {images.map((img, index) => (
       <div
         key={index}
+        data-testid={`image-container-${index}`}
         className="cursor-pointer overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105"
         onClick={() => handleClick(img)}
       >

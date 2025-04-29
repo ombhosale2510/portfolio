@@ -69,7 +69,7 @@ const projects = [
       <li>• Conducted comprehensive hyperparameter tuning and utilized cross-validation techniques to enhance model accuracy and robustness.</li>
     </ul>
     </>),
-    details: "Developed a project on house price prediction using advanced regression techniques like Gradient Boosting and Random Forest, exploring factors influencing property values to enhance understanding in real estate analytics."
+    details: "Developed a novel optimization framework integrating Layer-wise Relevance Propagation (LRP) into neural network training, enhancing model interpretability while maintaining competitive performance on benchmark datasets."
   },
   // Add more projects here
 ];
