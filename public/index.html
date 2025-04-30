@@ -49,6 +49,35 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Om Bhosale - AI Engineer Portfolio</title>
+    
+    <!-- Prevent flash of light theme -->
+    <style>
+      .dark-theme {
+        background-color: #121212;
+        color: #E0E0E0;
+      }
+      
+      /* Apply dark theme immediately if user had it enabled */
+      html {
+        visibility: hidden;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+    
+    <!-- Script to prevent flash of wrong theme -->
+    <script>
+      (function() {
+        // Get the saved theme from localStorage
+        var savedTheme = localStorage.getItem('theme');
+        // Apply dark theme immediately if it was saved, or if system prefers dark
+        if (savedTheme === 'dark' || 
+            (savedTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark-theme');
+        }
+        // Make content visible once theme is determined
+        document.documentElement.style.visibility = 'visible';
+      })();
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
